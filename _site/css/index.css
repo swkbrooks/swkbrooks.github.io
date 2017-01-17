@@ -4,11 +4,47 @@
 }
 
 html {
-  font-family: "Anonymous Pro";
+  /*font-family: "Anonymous Pro";*/
+  /*font-family: 'Source Sans Pro';*/
+  font-family: 'Nunito', sans-serif;
 }
 
 h4 {
   font-size: 18px;
+}
+
+.container {
+  /*margin-left: 5em;*/
+}
+
+.footer {
+  position: fixed;
+  background-color: white;
+  /*padding-top: -1rem;*/
+  margin-top: .1rem;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  min-width: 46.20em;
+}
+
+@media (min-width: 36em) {
+  .header {
+    position: fixed;
+  }
+  .footer {
+    position: fixed;
+  }
+}
+
+@media (max-width: 36em) {
+  .title {
+    margin-top: 9rem;
+  }
+}
+
+.title {
+  margin-bottom: 1rem;
 }
 
 .btn, .btn:hover, .btn:focus {
@@ -34,6 +70,24 @@ h4 {
   border-color: transparent;
 }
 
+.name-text:hover {
+  padding-left: .5rem;
+  border-left: #0C1421;
+  margin-left: -.7rem;
+  border-left-style: solid;
+  padding-bottom: .2rem;
+  border-bottom: #91ACBF;
+}
+
+.name-text: focus {
+  padding-left: .5rem;
+  border-left: #0C1421;
+  margin-left: -.7rem;
+  border-left-style: solid;
+  padding-bottom: .3rem;
+  border-bottom: #91ACBF;
+}
+
 body {
   /*font-family: 'Raleway', sans-serif;*/
   /*font-family: 'Lora', serif;*/
@@ -57,7 +111,7 @@ a, a:hover, a:focus {
 
 .name {
   font-size-adjust: : 16;
-  padding-bottom: .3em;
+  /*padding-bottom: .3em;*/
 }
 
 .nav-item  {
@@ -70,13 +124,22 @@ a, a:hover, a:focus {
   margin-top: 1em;
 }
 
-.active {
+/*.active {
   padding-left: .5rem;
   border-left: #91ACBF;
   margin-left: -.7rem;
   border-left-style: solid;
   padding-bottom: .2rem;
   border-bottom: #91ACBF;
+}*/
+
+.active-button {
+  padding-left: .5rem;
+  border-left: #D61A11;
+  margin-left: -.7rem;
+  border-left-style: solid;
+  padding-bottom: .2rem;
+  border-bottom: #D61A11;
 }
 
 .btn-sm {
@@ -84,5 +147,26 @@ a, a:hover, a:focus {
 }
 
 .main{
-  margin-left: 2rem;
+  margin-left: 1.5rem;
+}
+
+.dropdown-menu {
+  font-size: 13px;
+  padding: .5rem 0rem .5rem 1rem;
+  margin: 0rem 0rem 0rem 0rem;
+  border-radius: 0rem;
+}
+
+.dropdown-item {
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.dropdown-divider {
+  margin-left: -1rem;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    color: #fff;
+    background-color: #D7E1E8;
 }
